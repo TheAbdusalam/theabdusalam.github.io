@@ -12,12 +12,7 @@ Age: 23
 aka: themambadev
 ```
 
-a 🇸🇴 and 🇪🇹 -ian in  🇹🇷 and I solve business problems using my God given Software, Design and Marketing skills.
-
-
-
-You might be thinking "shoot that's a lot of stuff" but... it really doesn't take much to learn about reactions when you live inside a lab ( the lab here being my passion, environment and connections combined )
-
+a 🇸🇴 and 🇪🇹 -ian in  🇹🇷 and I solve business problems using computers.
 
 For the last ~8 years I've been lucky enough to learn, work on and teach (for a brief period of time) stuff that i am truly passionate about. Here i post my thoughts on them, things i find interesting and most importantly to articulate my thoughts to understand myself better.
 
@@ -59,14 +54,12 @@ You will find me bragging about stuff i did, occasionally.
     - [Thought Experiment](https://fs.blog/2017/04/thought-experiment/)
 
 ## Socials
-I don't use social media strictly because of privacy reasons, also i might sound like a boomer but they really aren't that important (except for businesses ofc). Feel free to shoot me an email and share your thoughts with me in Somali, English, Amharic or Arabic (not flexing).
+Feel free to shoot me an email and share your thoughts with me in Somali, English, Amharic or Arabic (not flexing).
 
-**Github** -> [here](https://github.com/themambadev)
+**Youtube** -> [here](https://youtube.com/@theabdusalam)
 
+**Github** -> [here](https://github.com/theabdusalam)
 
-**Email** -> [here](mailto:abdusalam.mah@gmail.com)
-
-**Gab** -> [here](https://gab.com/themambadev)
-
+**Email** -> [here](mailto:theabdusalam1@gmail.com)
 
 **Whatsapp** -> HA! i don't know you like that yet.

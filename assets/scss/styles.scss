@@ -5,17 +5,19 @@
 }
 
 body {
-	font: 1rem/1.5 -apple-system,BlinkMacSystemFont,"avenir next",avenir,helvetica,"helvetica neue",ubuntu,roboto,noto,"segoe ui",arial,sans-serif;
+	//font: 1rem/1.5 -apple-system,BlinkMacSystemFont,"avenir next",avenir,helvetica,"helvetica neue",ubuntu,roboto,noto,"segoe ui",arial,sans-serif;
+	// a geek's font
+	font: 1rem/1.5 "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 	text-rendering:optimizeSpeed;
 }
 
 body::before {
   content: "";
-//background-image: url('https://images.unsplash.com/photo-1629197519111-053d2be5b392?q=80&w=2846&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+background-image: url('https://images.unsplash.com/photo-1629197519111-053d2be5b392?q=80&w=2846&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 
-background: lightgray;
+//background: #e9f5db;
 //background-image: url('https://images.unsplash.com/photo-1614292253389-bd2c1f89cd0e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-//  opacity: 0.3; /* Adjust the opacity as needed */
+  opacity: 0.3; /* Adjust the opacity as needed */
   position: fixed;
   top: 0;
   left: 0;
