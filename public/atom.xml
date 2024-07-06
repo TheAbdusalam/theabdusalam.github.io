@@ -1,0 +1,222 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TheAbdusalam - that somali dev</title><description/><link>https://theabdusalam.github.io</link><language>en</language><copyright>Copyright 2024, Ronalds Vilcins</copyright><lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>What is your anchor?</title><link>https://theabdusalam.github.io/2023/12/11/what-is-your-anchor/</link><description>&lt;h3 id="_what-determines-your-habits-decisions-and-actions_">&lt;em>what determines your habits, decisions and actions?&lt;/em> &lt;a href="#_what-determines-your-habits-decisions-and-actions_" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>I&amp;rsquo;ve come to realize that I thrive on the steady rhythm of purpose and goals. Call it my anchor, if you will. When I&amp;rsquo;m immersed in a project, when I have a goal to chase, the gears of my existence seem to sync up seamlessly, everything just falls into place. I tend to wake up earlier, I&amp;rsquo;m more focused, and I feel more alive. It&amp;rsquo;s as if my life is a ship, and my purpose is the anchor that keeps me grounded and propels me forward.&lt;/p>
+&lt;p>Now, I&amp;rsquo;m not claiming to be the only one sailing this ship. Some brilliant minds have traversed similar waters, shedding light on the peculiar relation between productivity and purpose. Nietzsche, an atheist philosopher, once wrote, &amp;ldquo;He who has a why to live can bear almost any how.&amp;rdquo; It resonates deeply, doesn&amp;rsquo;t it? The &amp;lsquo;why&amp;rsquo; becomes the anchor, pulling us through the stormy seas of distraction and lethargy.
+those who have a clear sense of purpose are more likely to endure the unimaginable. It&amp;rsquo;s a stark reminder that having a project, a goal, is not merely a luxury but a lifeline.&lt;/p>
+&lt;p>But why does this happen? Why does my motivation spike when I&amp;rsquo;m chasing something? Mihaly Csik-(some long name) introduced the concept of &amp;ldquo;flow,&amp;rdquo; that magical state where you&amp;rsquo;re so engrossed in an activity that time seems to slip away. It&amp;rsquo;s not just about being productive; it&amp;rsquo;s about being in the zone, where every effort is effortless. and i think that is what i am subconsciously chasing. that state of flow.&lt;/p>
+&lt;p>So, what&amp;rsquo;s your anchor in life? Is it a creative project that makes your heart race? A goal that propels you out of bed in the morning? In the grand tapestry of existence, these anchors are the threads that put purpose into our days. They transform the mundane into the extraordinary.&lt;/p>
+&lt;p>In the end, it&amp;rsquo;s not just about being busy; it&amp;rsquo;s about being purposefully busy. It&amp;rsquo;s about finding that anchor that keeps you grounded and propels you forward. As the saying goes, &amp;ldquo;A ship in harbor is safe, but that is not what ships are built for.&amp;rdquo;&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>https://theabdusalam.github.io/2023/12/11/what-is-your-anchor/</guid><pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate></item><item><title>Navigating DDD Complexities[Aggregates]</title><link>https://theabdusalam.github.io/2023/11/20/navigating-ddd-complexities/</link><description>&lt;h1 id="mastering-domain-driven-design-in-go-a-comprehensive-guide">Mastering Domain-Driven Design in Go: A Comprehensive Guide &lt;a href="#mastering-domain-driven-design-in-go-a-comprehensive-guide" class="hash">#&lt;/a>&lt;/h1>
+&lt;h2 id="introduction">Introduction &lt;a href="#introduction" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Go, also known as Golang, has gained significant popularity for its simplicity, efficiency, and scalability. In this blog, we will explore the synergy between Go and Domain-Driven Design (DDD), a powerful approach to software development that aligns business requirements with the codebase. By combining the strengths of Go and DDD, developers can build robust, maintainable, and scalable systems.&lt;/p>
+&lt;h2 id="understanding-domain-driven-design-ddd">Understanding Domain-Driven Design (DDD) &lt;a href="#understanding-domain-driven-design-ddd" class="hash">#&lt;/a>&lt;/h2>
+&lt;h3 id="core-concepts-of-ddd">Core Concepts of DDD &lt;a href="#core-concepts-of-ddd" class="hash">#&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Ubiquitous Language:&lt;/strong> Establish a shared vocabulary between business stakeholders and developers to ensure a common understanding of the domain.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Bounded Context:&lt;/strong> Define clear boundaries within which a particular model and its language are applicable, avoiding ambiguity in different parts of the system.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Aggregates:&lt;/strong> Cluster related entities and value objects into aggregates, treating them as a single unit to maintain consistency.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Entities and Value Objects:&lt;/strong> Differentiate between entities (objects with a distinct identity) and value objects (objects defined by their attributes).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Repositories:&lt;/strong> Manage the lifecycle of aggregates and provide a way to retrieve and store them.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="strategic-design">Strategic Design &lt;a href="#strategic-design" class="hash">#&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Context Mapping:&lt;/strong> Visualize the relationships and boundaries between different bounded contexts.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Big Picture Event Storming:&lt;/strong> Collaboratively explore complex domains using events to discover the core processes.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="leveraging-go-for-ddd">Leveraging Go for DDD &lt;a href="#leveraging-go-for-ddd" class="hash">#&lt;/a>&lt;/h2>
+&lt;h3 id="lightweight-concurrency">Lightweight Concurrency &lt;a href="#lightweight-concurrency" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Go&amp;rsquo;s lightweight goroutines and channels make it easier to model concurrent processes, an essential aspect of many domain-driven systems. Use goroutines to represent independent business processes, improving the responsiveness of your system.&lt;/p>
+&lt;pre>&lt;code class="language-go">// Example of concurrent processing using goroutines
+func ProcessOrder(orderID int) {
+go validateOrder(orderID)
+go updateInventory(orderID)
+// ... other concurrent processes
+}
+func validateOrder(orderID int) {
+// Implementation of order validation
+}
+func updateInventory(orderID int) {
+// Implementation of inventory update
+}
+&lt;/code>&lt;/pre>
+&lt;h3 id="strong-typing-and-structs">Strong Typing and Structs &lt;a href="#strong-typing-and-structs" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Go&amp;rsquo;s strong typing and support for structs align well with DDD&amp;rsquo;s emphasis on modeling the domain with rich, expressive types. Use structs to define aggregates, entities, and value objects, leveraging Go&amp;rsquo;s type system for clarity and safety.&lt;/p>
+&lt;pre>&lt;code class="language-go">type OrderID int
+type Order struct {
+ID OrderID
+Items []OrderItem
+Customer Customer
+// ... other fields
+}
+type OrderItem struct {
+ProductID ProductID
+Quantity int
+}
+type Customer struct {
+ID int
+Name string
+// ... other fields
+}
+&lt;/code>&lt;/pre>
+&lt;h3 id="interface-based-design">Interface-Based Design &lt;a href="#interface-based-design" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Go&amp;rsquo;s interface-based design allows for defining contracts between components, promoting flexibility and testability. Use interfaces to represent domain services and repositories, enabling easy substitution of implementations.&lt;/p>
+&lt;pre>&lt;code class="language-go">type OrderRepository interface {
+Save(order Order) error
+FindByID(orderID OrderID) (Order, error)
+// ... other methods
+}
+type OrderService interface {
+ValidateOrder(order Order) error
+// ... other methods
+}
+&lt;/code>&lt;/pre>
+&lt;h2 id="implementing-ddd-in-go-a-step-by-step-guide">Implementing DDD in Go: A Step-by-Step Guide &lt;a href="#implementing-ddd-in-go-a-step-by-step-guide" class="hash">#&lt;/a>&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Identify Bounded Contexts:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Collaborate with domain experts to identify distinct areas of the business domain.&lt;/li>
+&lt;li>Use context mapping techniques to visualize relationships and boundaries.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Define Aggregates:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Identify entities and value objects within each bounded context.&lt;/li>
+&lt;li>Group related entities and value objects into aggregates.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Create Structs and Types:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Use Go structs and types to model aggregates, entities, and value objects.&lt;/li>
+&lt;li>Leverage Go&amp;rsquo;s strong typing to capture domain concepts accurately.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Implement Repositories:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Define repository interfaces for each aggregate.&lt;/li>
+&lt;li>Implement repository methods for storing and retrieving aggregates.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Develop Domain Services:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Identify domain services that encapsulate business logic.&lt;/li>
+&lt;li>Use interface-based design to define contracts for domain services.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Utilize Event-Driven Design:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Implement event sourcing or use events to represent state changes.&lt;/li>
+&lt;li>Leverage channels and goroutines for handling asynchronous processes.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Apply Test-Driven Development (TDD):&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Write tests for each component, following TDD principles.&lt;/li>
+&lt;li>Ensure that tests cover both happy paths and edge cases.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Integrate with Frameworks:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Leverage Go frameworks and libraries for cross-cutting concerns (e.g., authentication, logging).&lt;/li>
+&lt;li>Integrate with databases using Go&amp;rsquo;s database/sql package or an ORM.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="conclusion">Conclusion &lt;a href="#conclusion" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>By combining the simplicity and efficiency of Go with the principles of Domain-Driven Design, developers can create well-architected, scalable, and maintainable systems. Embrace Go&amp;rsquo;s concurrency model, strong typing, and interface-based design to align with DDD&amp;rsquo;s focus on modeling the domain.&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>https://theabdusalam.github.io/2023/11/20/navigating-ddd-complexities/</guid><pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate></item><item><title>Diamond Interface Composition in Go</title><link>https://theabdusalam.github.io/2023/10/21/the-diamond-interface-dilemma/</link><description>&lt;h1 id="diamond-interface-composition-in-go-a-masterpiece-unveiled">Diamond Interface Composition in Go: A Masterpiece Unveiled &lt;a href="#diamond-interface-composition-in-go-a-masterpiece-unveiled" class="hash">#&lt;/a>&lt;/h1>
+&lt;p>Architecture is an art form. It requires creativity, vision, and an eye for detail. As developers, we should strive to create elegant and expressive code. But what if we could take it a step further? What if we could create code that is not only beautiful but also reusable and flexible?&lt;/p>
+&lt;h2 id="the-diamond-dilemma">The Diamond Dilemma &lt;a href="#the-diamond-dilemma" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>In the realm of Go, interfaces are a powerful tool for achieving abstraction and polymorphism. However, when it comes to composing interfaces, things can get a bit tricky. The Diamond Interface Composition, a term not coined officially but aptly named for its visual resemblance to a diamond shape, refers to a scenario where a type implements multiple interfaces, and those interfaces share a common embedded interface.&lt;/p>
+&lt;p>Consider this scenario:&lt;/p>
+&lt;pre>&lt;code class="language-go">type Artist interface {
+Draw()
+}
+type Programmer interface {
+Code()
+}
+type CreativeCoder interface {
+Artist
+Programmer
+}
+type GoDeveloper struct{}
+func (gd GoDeveloper) Draw() {
+fmt.Println(&amp;quot;Drawing a Gopher&amp;quot;)
+}
+func (gd GoDeveloper) Code() {
+fmt.Println(&amp;quot;Coding in Go&amp;quot;)
+}
+&lt;/code>&lt;/pre>
+&lt;p>In this example, &lt;code>CreativeCoder&lt;/code> embeds both the &lt;code>Artist&lt;/code> and &lt;code>Programmer&lt;/code> interfaces. The &lt;code>GoDeveloper&lt;/code> type then implements both &lt;code>Draw&lt;/code> and &lt;code>Code&lt;/code> methods, creating a diamond-shaped relationship. While this may seem harmless, it can lead to unexpected behavior and confusion.&lt;/p>
+&lt;h2 id="the-unveiling-how-it-works">The Unveiling: How It Works &lt;a href="#the-unveiling-how-it-works" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Understanding the intricacies of Diamond Interface Composition requires a keen eye. When a type implements an interface that embeds other interfaces, it inherits the methods from all the embedded interfaces. In our example, &lt;code>GoDeveloper&lt;/code> implicitly satisfies both the &lt;code>Artist&lt;/code> and &lt;code>Programmer&lt;/code> interfaces through its implementation of &lt;code>CreativeCoder&lt;/code>.&lt;/p>
+&lt;pre>&lt;code class="language-go">var dev CreativeCoder = GoDeveloper{}
+dev.Draw() // Outputs: Drawing a Gopher
+dev.Code() // Outputs: Coding in Go
+&lt;/code>&lt;/pre>
+&lt;p>This is where the magic happens! The &lt;code>GoDeveloper&lt;/code> seamlessly fulfills the roles of both artist and programmer, showcasing the power of interface composition in Go.&lt;/p>
+&lt;h2 id="navigating-the-diamond-maze">Navigating the Diamond Maze &lt;a href="#navigating-the-diamond-maze" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Now, let&amp;rsquo;s address the challenges and pitfalls that can arise in the Diamond Interface Composition. One notable aspect is the resolution of method calls when interfaces share a common embedded interface.&lt;/p>
+&lt;p>Consider an interface with conflicting method signatures:&lt;/p>
+&lt;pre>&lt;code class="language-go">type Artist interface {
+Draw()
+}
+type Programmer interface {
+Draw()
+}
+type CreativeCoder interface {
+Artist
+Programmer
+}
+&lt;/code>&lt;/pre>
+&lt;p>Here, both &lt;code>Artist&lt;/code> and &lt;code>Programmer&lt;/code> have a &lt;code>Draw&lt;/code> method, and &lt;code>CreativeCoder&lt;/code> embeds both interfaces. In such cases, Go requires explicit disambiguation when calling the conflicting method:&lt;/p>
+&lt;pre>&lt;code class="language-go">var dev CreativeCoder = GoDeveloper{}
+dev.Artist.Draw() // Resolves to Artist's Draw method
+dev.Programmer.Draw() // Resolves to Programmer's Draw method
+&lt;/code>&lt;/pre>
+&lt;p>This explicit resolution ensures clarity and avoids ambiguity in method calls.&lt;/p>
+&lt;h2 id="dazzling-benefits-of-diamond-interface-composition">Dazzling Benefits of Diamond Interface Composition &lt;a href="#dazzling-benefits-of-diamond-interface-composition" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Despite its challenges, Diamond Interface Composition offers unique advantages to Gophers. Here are some of the benefits that make it a powerful tool in Go:&lt;/p>
+&lt;h3 id="1-code-reusability">1. Code Reusability &lt;a href="#1-code-reusability" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>By composing interfaces, you can reuse existing interfaces and build upon them. This promotes a modular and scalable codebase.&lt;/p>
+&lt;h3 id="2-clear-abstraction">2. Clear Abstraction &lt;a href="#2-clear-abstraction" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Diamond Interface Composition allows you to create interfaces that represent more specialized roles without sacrificing clarity. It enables you to model complex systems with ease.&lt;/p>
+&lt;h3 id="3-flexible-design">3. Flexible Design &lt;a href="#3-flexible-design" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Golang&amp;rsquo;s approach to interface composition empowers you to design flexible and adaptable code. You can easily extend and modify functionality without major code refactoring.&lt;/p>
+&lt;h2 id="wrapping-it-up">Wrapping It Up &lt;a href="#wrapping-it-up" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>In conclusion, Diamond Interface Composition in Go is like orchestrating a symphony of code, where different interfaces harmonize to create a cohesive and expressive whole. By embracing this unique aspect of Go, you unlock the potential for crafting elegant, reusable, and flexible code.&lt;/p>
+&lt;p>Hope i never lose that sense of meaning and purpose, that flow, i hope you never do too.&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>https://theabdusalam.github.io/2023/10/21/the-diamond-interface-dilemma/</guid><pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate></item><item><title>Chess and Software Engineering</title><link>https://theabdusalam.github.io/2023/10/07/chess-and-software-engineering/</link><description>&lt;h1 id="chess-and-software-engineering-a-dance-of-strategy-and-code">Chess and Software Engineering: A Dance of Strategy and Code &lt;a href="#chess-and-software-engineering-a-dance-of-strategy-and-code" class="hash">#&lt;/a>&lt;/h1>
+&lt;p>&lt;img src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?q=80&amp;amp;w=2758&amp;amp;auto=format&amp;amp;fit=crop" alt="Chess and Software Engineering" loading="lazy" />
+&lt;/p>
+&lt;p>In the intricate similarities between 64 squares and lines of code, I&amp;rsquo;ve discovered an unexpected synergy between the timeless game of chess and the dynamic world of software engineering. It&amp;rsquo;s as if Bobby Fischer and Alan Turing once sat down for a strategic tête-à-tête, leaving behind a trail of insightful parallels that transcend the boundaries of their respective domains.&lt;/p>
+&lt;p>&lt;strong>1. Thinking Ahead:&lt;/strong>&lt;/p>
+&lt;p>In both chess and software engineering, thinking ahead is paramount. As I maneuver my pieces on the board, I can&amp;rsquo;t help but draw parallels to the meticulous planning required in coding. As the chess grandmaster Garry Kasparov once said, &amp;ldquo;I always compare chess to making a movie. I play the leading role, and the pieces are my supporting cast.&amp;rdquo; Similarly, in software development, envisioning the endgame and anticipating potential pitfalls is the mark of a seasoned coder.&lt;/p>
+&lt;p>&lt;strong>2. Pattern Recognition:&lt;/strong>&lt;/p>
+&lt;p>Chess aficionados excel at pattern recognition, a skill that finds an uncanny echo in the realm of coding. Recognizing recurring motifs, whether on the board or in a complex codebase, is the hallmark of efficiency. Ada Lovelace, a pioneer in computer programming, once remarked, &amp;ldquo;We may say most aptly that the Analytical Engine weaves algebraic patterns just as the Jacquard loom weaves flowers and leaves.&amp;rdquo;&lt;/p>
+&lt;p>&lt;strong>3. Debugging Strategies:&lt;/strong>&lt;/p>
+&lt;p>Chess teaches us the art of debugging strategies. Just as a player scrutinizes each move for potential flaws, a software engineer delves into code to identify and rectify bugs. In the words of chess legend Vladimir Kramnik, &amp;ldquo;Chess is a constant struggle between my desire not to lose and my desire not to think.&amp;rdquo; In the coding realm, the battle is against errors, and the desire to produce flawless software fuels the relentless pursuit of perfection.&lt;/p>
+&lt;p>&lt;strong>4. Adaptability:&lt;/strong>&lt;/p>
+&lt;p>Both chess and software engineering demand adaptability. The ability to adjust strategies on the fly is a trait shared by grandmasters and seasoned coders alike. The late great chess player, Emanuel Lasker, captured this sentiment well: &amp;ldquo;In life, as in chess, forethought wins.&amp;rdquo; Similarly, in software engineering, anticipating changes and adapting code proactively can be the key to success.&lt;/p>
+&lt;p>&lt;strong>5. Teamwork and Collaboration:&lt;/strong>&lt;/p>
+&lt;p>Chess may be perceived as an individual pursuit, but when it comes to analysis and preparation, collaboration is key. Software engineering echoes this sentiment in the form of collaborative coding. Linus Torvalds, the creator of Linux, once said, &amp;ldquo;I&amp;rsquo;m doing a (free) operating system (just a hobby, won&amp;rsquo;t be big and professional like GNU).&amp;rdquo;&lt;/p>
+&lt;p>&lt;strong>6. The Role of Creativity:&lt;/strong>&lt;/p>
+&lt;p>Beyond the rigidity of rules, both chess and software engineering allow for creative expression. As chess legend Mikhail Tal put it, &amp;ldquo;You must take your opponent into a deep dark forest where 2+2=5, and the path leading out is only wide enough for one.&amp;rdquo; Similarly, crafting elegant code solutions often involves thinking outside the box and finding unconventional paths to problem-solving.&lt;/p>
+&lt;p>In conclusion, the parallels between chess and software engineering run deep. Whether you&amp;rsquo;re strategizing on a checkered battlefield or debugging lines of code, the mental agility and strategic foresight required are remarkably similar.&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>https://theabdusalam.github.io/2023/10/07/chess-and-software-engineering/</guid><pubDate>Sat, 07 Oct 2023 00:00:00 +0000</pubDate></item></channel></rss>

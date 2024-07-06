@@ -7,12 +7,12 @@ title: Who?
 
 ## Who are you?
 ```
-Name: Abdusalam Mahamed
+Full name: Abdusalam *********** **********
 Age: 23 
-aka: themambadev
+aka: the_abdusalam
 ```
 
-a 🇸🇴 and 🇪🇹 -ian in  🇹🇷 and I solve business problems using computers.
+a 🇸🇴in  🇹🇷 and I solvelove solving business problems using computers.
 
 For the last ~8 years I've been lucky enough to learn, work on and teach (for a brief period of time) stuff that i am truly passionate about. Here i post my thoughts on them, things i find interesting and most importantly to articulate my thoughts to understand myself better.
 
