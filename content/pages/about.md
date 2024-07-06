@@ -12,7 +12,7 @@ Age: 23
 aka: the_abdusalam
 ```
 
-a 🇸🇴in  🇹🇷 and I solvelove solving business problems using computers.
+a 🇸🇴in  🇹🇷 and  love low-level stuff, i pray everyday to not have to use JS (don't get accepted mostly)
 
 For the last ~8 years I've been lucky enough to learn, work on and teach (for a brief period of time) stuff that i am truly passionate about. Here i post my thoughts on them, things i find interesting and most importantly to articulate my thoughts to understand myself better.
 
