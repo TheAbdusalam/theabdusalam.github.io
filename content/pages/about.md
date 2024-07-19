@@ -2,9 +2,6 @@
 title: Who?
 ---
 
-![theabdusalam](/pic.png)
-
-
 ## Who are you?
 ```
 Full name: Abdusalam *********** **********
