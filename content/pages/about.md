@@ -9,18 +9,13 @@ Age: 23
 aka: the_abdusalam
 ```
 
-a 🇸🇴in  🇹🇷 and  love low-level stuff, i pray everyday to not have to use JS (don't get accepted mostly)
+a 🇸🇴 Computer Engineer that loves low-level stuff, i pray everyday to not have to use JS (don't get accepted mostly)
 
 For the last ~8 years I've been lucky enough to learn, work on and teach (for a brief period of time) stuff that i am truly passionate about. Here i post my thoughts on them, things i find interesting and most importantly to articulate my thoughts to understand myself better.
 
 You will find me bragging about stuff i did, occasionally.
 
 ## Stuff
-- **I Made**
-  - [ardaa](https://ardaa.dev) (under construction) - a blogging platform for the Somali tech community.
-  - [Omr System](https://github.com/TheMambaDev/omr-fastapi) - a fastapi based marking system for school teachers.
-  - [An Opinionated Go Framework](https://github.com/theMambaDev/slick) - a go api starter with batteries included.
-
 - **I Designed**
   - [Riseup Brand](https://www.facebook.com/RiseUpETH/)
   - [Bayahow Book Creative Direction and Editing](https://www.ovset.org/_files/ugd/fd38e0_532f02ae304442afa4800c5d610ec726.pdf) - a report of some sort *wink wink*

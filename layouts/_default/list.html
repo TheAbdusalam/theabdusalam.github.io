@@ -1,20 +1,29 @@
 <!doctype html>
 <html lang="en">
-  {{ partial "head.html" . }}
+{{ partial "head.html" . }}
+
 <body>
   <main>
     {{ partial "header.html" . }}
+    <h1 itemprop="headline">@TheAbdusalam<b style="font-weight: bolder;font-size: 150%; color: lightgreen;">_</b></h1>
     <section>
-
+      i write (<a href="mailto:theabdusalam1@gmail.com" title="Email me" itemprop="email">
+        <small style="text-decoration: underline;color: darkblue;"> MOSTLY BECAUSE I AM UNEMPLOYED,
+          PLEASE HIRE
+          ME</small></a>)
+      about stuff i am interested in, learning about or just want to share with the world.
+      <br>
+      <br>
+      <h2>Posts</h2>
       <ul class="posts">
         {{ range (.Paginate ( where .Site.RegularPages "Section" "posts" ).ByDate.Reverse).Pages }}
-          {{ if ne .Kind "section" }}
-          <li itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-            <a href="{{ .Permalink }}" title="{{ .Title }}" itemprop="name url">{{ .Title }}</a>
-            <hr>
-           <time datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "2006-01-02" .Date }}</time>
-          </li>
-          {{ end }}
+        {{ if ne .Kind "section" }}
+        <li itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+          <a href="{{ .Permalink }}" title="{{ .Title }}" itemprop="name url">{{ .Title }}</a>
+          <hr>
+          <time datetime="{{ dateFormat " 2006-01-02" .Date }}">{{ dateFormat "2006-01-02" .Date }}</time>
+        </li>
+        {{ end }}
         {{ end }}
       </ul>
     </section>
@@ -22,4 +31,5 @@
     {{ partial "footer.html" . }}
   </main>
 </body>
+
 </html>

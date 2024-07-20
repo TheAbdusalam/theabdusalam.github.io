@@ -73,9 +73,9 @@ minify = true
     weight     = -100
 
   [[menu.main]]
-    identifier = "mistakes"
-    name       = "mistakes"
-    url        = "/mistakes/"
+    identifier = "projects"
+    name       = "projects"
+    url        = "/projects/"
     weight     = -30
 
 
