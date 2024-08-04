@@ -80,25 +80,23 @@ a:hover {
 
 code,
 pre {
+	font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+	background: #f4f4f4;
+	border-radius: .3rem;
 	color: #353535;
-	font-family: San Francisco Mono, Monaco, "Consolas", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
-	font-size: normal;
-	border: 1px solid #353535;
-	font-size: small;
+
 }
 
 code {
 	padding: .1rem;
 	border: none;
+	font-size: .9rem;
 }
 
 pre {
 	padding: .5rem;
 	overflow-x: auto;
-}
-
-pre code {
-	border: none;
+	filter: drop-shadow(0 0 1px #1a1a1a);
 }
 
 img {

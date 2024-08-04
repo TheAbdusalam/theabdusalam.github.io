@@ -78,10 +78,16 @@ minify = true
     url        = "/projects/"
     weight     = -30
 
+  [[menu.main]]
+    identifier = "notes"
+    name       = "notes"
+    url        = "/notes/"
+    weight     = -20
+
 
   [[menu.main]]
     identifier = "who?"
     name       = "who"
     url        = "/who/"
-    weight     = -20
+    weight     = -10
 
