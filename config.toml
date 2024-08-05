@@ -7,7 +7,7 @@ pygmentsCodeFences = false
 pygmentsUseClasses = false
 paginate = 999
 minify = true
-
+googleAnalytics = "G-70WNS8KK14"
 
 [taxonomies]
   tag = "tags"
@@ -16,7 +16,7 @@ minify = true
   [privacy.disqus]
     disable = true
   [privacy.googleAnalytics]
-    disable = true
+    disable = false
   [privacy.instagram]
     disable = true
   [privacy.twitter]
