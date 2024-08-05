@@ -2,13 +2,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Ronalds Vilcins - {{ .Site.BaseURL }}">
+  <meta name="author" content="Abdusalam - {{ .Site.BaseURL }}">
   <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 {{ template "_internal/twitter_cards.html" . }}
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/schema.html" . }}
-{{ template "_internal/google_analytics.html" . }}
   <link rel="canonical" href="{{ .Permalink | absURL }}">
   <link rel="dns-prefetch" href="https://www.google-analytics.com">
   <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
@@ -17,7 +16,14 @@
   <link rel="shortcut icon" type="image/png" href="/favicon.ico">
   {{ $styles := resources.Get "scss/styles.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
   <style>{{ $styles.Content | safeCSS }}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-70WNS8KK14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-70WNS8KK14');
+</script>
   {{ if .IsHome -}}
 <script type="application/ld+json">
 {
